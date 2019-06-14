@@ -1,5 +1,4 @@
 
-
 @extends('layouts.master')
 
 @section('containt')
@@ -10,8 +9,6 @@ echo url()->current();
 @endphp
 
 @endsection
-
-
 
 <script>
 jQuery(document).ready(function() {    

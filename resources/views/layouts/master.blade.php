@@ -29,9 +29,6 @@
 			
 			@yield('containt')
 
-
-			
-			
 			
 		</div>
 	</div>
