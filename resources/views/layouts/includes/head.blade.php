@@ -14,6 +14,8 @@
 <link href="assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
 <!----css for select menu start------>
 <link href="assets/global/plugins/select2/select2.css" rel="stylesheet" type="text/css"/>
+
+<link href="assets/global/css/jquery-confirm.min.css" rel="stylesheet" type="text/css"/>
 <!----css for select menu end------>
 
 <link href="assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>

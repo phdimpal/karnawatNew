@@ -26,3 +26,8 @@ Route::get('/edit_company', function () {return view('company.edit_company');
 
 Route::get('/view_company', function () {return view('company.view_company');
 });
+
+//Root For Unit
+
+Route::get('/unit_list', function () {return view('unit.unit_list');
+});

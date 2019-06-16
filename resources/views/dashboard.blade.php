@@ -1,10 +1,8 @@
 @extends('layouts.master')
-
-@section('content')
+ @section('content')
 <div class="page-content-wrapper">
 		<div class="page-content">
 			
-
 		</div>
 	</div>
 @endsection

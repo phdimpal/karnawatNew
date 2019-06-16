@@ -163,6 +163,8 @@
 
 @section('js')
 
+<script src="assets/global/js/jquery-confirm.min.js"type="text/javascript"></script>
+
 <script>
 jQuery(document).ready(function() {
 

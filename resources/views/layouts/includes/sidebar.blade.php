@@ -32,7 +32,7 @@
 							Company</a>
 						</li>
 						<li>
-							<a href="unit_list.html">
+							<a href="unit_list">
 							<i class="icon-bar-chart"></i>
 							Units</a>
 						</li>
