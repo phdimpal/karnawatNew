@@ -3,7 +3,7 @@
 	<div class="page-header-inner">
 		<!-- BEGIN LOGO -->
 		<div class="page-logo">
-			<a href="index.html">
+			<a href="#">
 				<h3>KARNAWAT</h3>
 			</a>
 			<div class="menu-toggler sidebar-toggler hide">
@@ -51,4 +51,6 @@
 		<!-- END TOP NAVIGATION MENU -->
 	</div>
 	<!-- END HEADER INNER -->
+</div>
+<div class="clearfix">
 </div>

@@ -1,23 +1,14 @@
-
 @extends('layouts.master')
 
-@section('containt')
+@section('content')
+<div class="page-content-wrapper">
+		<div class="page-content">
+			
 
-<h1>Welcome Admin</h1>
-@php
-echo url()->current();
-@endphp
-
+		</div>
+	</div>
 @endsection
 
-<script>
-jQuery(document).ready(function() {    
-	Metronic.init(); // init metronic core componets
-	Layout.init(); // init layout
-	QuickSidebar.init(); // init quick sidebar
-	Demo.init(); // init demo features
-	Index.init();   
- 
-});
-</script>
-<!-- END JAVASCRIPTS -->
+@section('js')
+
+@endsection

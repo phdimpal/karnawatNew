@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,10 +10,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/','MainController@login');
+Route::get('/postlogin', 'MainController@postLogin');
+Route::get('/select_financial', 'MainController@selectFinancial');
+Route::get('/dashboard', 'MainController@dashboard');
+
+Route::get('/company', function () {return view('company.company_list');
 });
 
-Route::get('/index', function () {
-    return view('dashboard');
+Route::get('/add_company', function () {return view('company.add_company');
+});
+
+Route::get('/edit_company', function () {return view('company.edit_company');
+});
+
+Route::get('/view_company', function () {return view('company.view_company');
 });

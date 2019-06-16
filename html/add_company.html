@@ -531,7 +531,7 @@
 <script src="assets/admin/pages/scripts/index.js" type="text/javascript"></script>
 <script src="assets/admin/pages/scripts/tasks.js" type="text/javascript"></script>
 <script src="assets/global/js/jquery.validate.min.js" type="text/javascript"></script>
-<script src="assets/global/js/additional-methods.min.js" type="text/javascript"></script>
+ 
 <script src="assets/admin/pages/scripts/components-pickers.js" type="text/javascript"></script>
 <script src="assets/admin/pages/scripts/components-dropdowns.js"></script>
 
@@ -546,11 +546,13 @@ jQuery(document).ready(function() {
 	ComponentsPickers.init();
 	ComponentsDropdowns.init();
 });
-jQuery(document).ready(function() {    
+
+jQuery(document).ready(function() { 
 
 	$('#country_name').select2();
 	$('#state_name').select2();
-	$('#city_name').select2();	
+	$('#city_name').select2();
+		
 });
 
 add_row();

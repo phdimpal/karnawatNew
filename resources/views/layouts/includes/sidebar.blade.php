@@ -26,8 +26,8 @@
 					<span class="arrow"></span>
 					</a>
 					<ul class="sub-menu">
-						<li >
-							<a href="company_list.html">
+						<li>
+							<a href="company">
 							<i class="icon-bar-chart"></i>
 							Company</a>
 						</li>
