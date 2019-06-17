@@ -53,9 +53,14 @@ Route::get('/view_customer', function () {return view('customer.view_customer');
 //User Rout Start
 Route::get('/users_master_list', function () {return view('user.users_master_list');
 });
+
 Route::get('/view_users', function () {return view('user.view_users');
 });
+
 Route::get('/user_master', function () {return view('user.user_master');
+});
+
+Route::get('/edit_user_master', function () {return view('user.edit_user_master');
 });
 
 

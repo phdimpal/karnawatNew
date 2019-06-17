@@ -2,7 +2,7 @@
  @section('content')
 <div class="page-content-wrapper">
 		<div class="page-content">
-			<h3 class="page-title">Add User</h3>
+			<h3 class="page-title">Edit User</h3>
 			<div class="page-bar">
 				<ul class="page-breadcrumb grey-cascade">
 					<li>
@@ -15,7 +15,7 @@
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="user_master">Add User</a>
+						<a href="edit_user_master">Edit User</a>
 					</li>
 				</ul>
 			</div>
@@ -23,14 +23,12 @@
 			<div class="portlet box green util-btn-group">
 				<div class="portlet-title">
 					<div class="caption">
-						<i class="fa fa-gift"></i>Add User
+						<i class="fa fa-gift"></i>Edit User
 					</div>
 				</div>
-			<div class="portlet-body form">
-
+				<div class="portlet-body form">
 <!-- BEGIN FORM-->
 <form id="user_form" name="user_form" method="post" action="#" class="horizontal-form">
-
 <div class="form-body">
 
 <div class="row">
@@ -59,29 +57,7 @@
 <!--/row-->
 
 <!--/row-->
-<div class="row">
-	<div class="col-md-4">
-	<div class="form-group">
-		<label class="control-label">User Name</label>
-		<input type="text" name="user_name" id="user_name" class="form-control" placeholder="Name">
-	</div>
-</div>
-<div class="col-md-4">
-	<div class="form-group">
-		<label class="control-label">Password</label>
-		<input type="password" name="password" id="password" class="form-control" placeholder="Password ">
-	</div>
-</div>
-<!--/span-->
-<div class="col-md-4">
-	<div class="form-group">
-		<label class="control-label">Re-Password</label>
-		<input type="password" id="re_password" name="re_password" class="form-control" placeholder="Re-Password">
-		
-	</div>
-</div>
-<!--/span-->
-</div>
+
 
 <div class="row">
 	<div class="col-md-4">
@@ -117,17 +93,18 @@
                               </table>
                             </div>
                                
-        </div>
+        				</div>
 
-         <!---------------End Add Row Functionality Address------------>   
-</div>
-<div class="form-actions right">
-<button type="button" class="btn default">Cancel</button>
-<button type="submit" class="btn green"><i class="fa fa-check"></i> Save</button>
-</div>
-</form>
-<!-- END FORM-->
-</div>
+         <!---------------End Add Row Functionality Address------------>
+
+        
+						</div>
+					<div class="form-actions right">
+					<button type="button" class="btn default">Cancel</button>
+					<button type="submit" class="btn green"><i class="fa fa-check"></i> Edit</button>
+					</div>
+			</form>
+			</div>
 </div>
 			
 		</div>
@@ -139,7 +116,12 @@
 <script>
 
 jQuery(document).ready(function() {   
-	
+	Metronic.init(); // init metronic core componets
+	Layout.init(); 
+	QuickSidebar.init(); // init quick sidebar
+	Demo.init();
+	ComponentsPickers.init();
+	ComponentsDropdowns.init();
 });
 
 add_row();
