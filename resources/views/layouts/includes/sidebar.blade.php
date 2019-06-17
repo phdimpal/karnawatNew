@@ -37,12 +37,12 @@
 							Units</a>
 						</li>
 					     <li >
-							<a href="customer_list.html">
+							<a href="customer_list">
 							<i class="icon-bar-chart"></i>
 							Customer</a>
 						</li>
 						<li >
-							<a href="users_master_list.html">
+							<a href="users_master_list">
 							<i class="icon-bar-chart"></i>
 							User</a>
 						</li>

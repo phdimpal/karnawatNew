@@ -219,7 +219,8 @@ jQuery(document).ready(function() {
 
   $('#country_name').select2();
   $('#state_name').select2();
-  $('#city_name').select2();  
+  $('#city_name').select2();
+    
 });
 
 add_row();

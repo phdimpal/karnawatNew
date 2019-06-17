@@ -1,45 +1,42 @@
 @extends('layouts.master')
-
-<link href="assets/global/css/jquery-confirm.min.css" rel="stylesheet" type="text/css"/>
-
-@section('content')
-
+ @section('content')
 <div class="page-content-wrapper">
 		<div class="page-content">
-				<h3 class="page-title">Company List </h3>
-			    <div class="page-bar">
 
-							<ul class="page-breadcrumb grey-cascade">
-								<li>
-									<i class="fa fa-home"></i>
-									<a href="dashboard">Home</a>
-									<i class="fa fa-angle-right"></i>
-								</li>
-								<li>
-									<a href="company">Company</a>
-									<i class="fa fa-angle-right"></i>
-								</li>
-								<li>
-									<a href="company">Company List</a>
-								</li>
-							</ul>
-			    </div>
+			<h3 class="page-title">Customer List </h3>
 
-			    <div class="row">
+			<div class="page-bar">
+
+				<ul class="page-breadcrumb grey-cascade">
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="dashboard">Home</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="customer_list">Customer</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="customer_list">Customer List</a>
+					</li>
+				</ul>
+				</div>
+
+				<div class="row">
 				<div class="col-md-12 col-sm-12">
 					<!-- BEGIN EXAMPLE TABLE PORTLET-->
 					<div class="portlet box green util-btn-group">
 						<div class="portlet-title">
 							<div class="caption">
-								<i class="fa fa-user"></i>Company List
+								<i class="fa fa-user"></i>Customer List
 							</div>
 							<div class="actions">
-								<a href="add_company" class="btn btn-default btn-sm btn_add">
+								<a href="add_customer" class="btn btn-default btn-sm btn_add">
 								<i class="fa fa-plus btn-fa-icon"></i> Add </a>
 								
 							</div>
 						</div>
-
 						<div class="portlet-body">
 							<table class="table table-striped table-bordered table-hover" id="sample_2">
 							<thead>
@@ -48,14 +45,12 @@
 									<input type="checkbox" class="group-checkable" data-set="#sample_2 .checkboxes"/>
 								</th>
 								<th>
-									 Company Name
+									 Customer Name
 								</th>
 								<th>
 									 Mobile 
 								</th>
-								<th>
-									 Email
-								</th>
+								
 								<th>
 									 Action
 								</th>
@@ -68,20 +63,17 @@
 									<input type="checkbox" class="checkboxes" value="1"/>
 								</td>
 								<td>
-									 test
+									 third customer
 								</td>
 								<td>
-									999999999
+									9999998989
 								</td>
+							
 								<td>
-									<a href="mailto:userwow@gmail.com">
-									test@gmail.com </a>
-								</td>
-								<td>
-									<a href="edit_company" class="btn btn-icon-only green">
+									<a href="edit_customer" class="btn btn-icon-only green">
 											<i class="fa fa-edit"></i>
 									</a>
-									<a href="view_company" class="btn btn-icon-only yellow">
+									<a href="view_customer" class="btn btn-icon-only yellow">
 											<i class="fa fa-eye"></i>
 									</a>
 									<a href="#" class="btn btn-icon-only red  alert_conform"  >
@@ -97,20 +89,17 @@
 									<input type="checkbox" class="checkboxes" value="1"/>
 								</td>
 								<td>
-									 second test recor
+									 first customer
 								</td>
 								<td>
-										777777777777
+										773634447
 								</td>
+							
 								<td>
-									<a href="mailto:userwow@gmail.com">
-									phppoets@123.gmail.com </a>
-								</td>
-								<td>
-									<a href="edit_company.html" class="btn btn-icon-only green">
+									<a href="edit_customer" class="btn btn-icon-only green">
 											<i class="fa fa-edit"></i>
 									</a>
-									<a href="view_company.html" class="btn btn-icon-only yellow">
+									<a href="view_customer" class="btn btn-icon-only yellow">
 											<i class="fa fa-eye"></i>
 									</a>
 									<a href="#" class="btn btn-icon-only red  alert_conform" >
@@ -126,20 +115,17 @@
 									<input type="checkbox" class="checkboxes" value="1"/>
 								</td>
 								<td>
-									 second test
+									 second customer
 								</td>
 								<td>
-										88888888888
+										8889765434
 								</td>
+								
 								<td>
-									<a href="mailto:userwow@gmail.com">
-									test1234@gmail.com </a>
-								</td>
-								<td>
-									<a href="edit_company.html" class="btn btn-icon-only green">
+									<a href="edit_customer" class="btn btn-icon-only green">
 											<i class="fa fa-edit"></i>
 									</a>
-									<a href="view_company.html" class="btn btn-icon-only yellow">
+									<a href="view_customer" class="btn btn-icon-only yellow">
 											<i class="fa fa-eye"></i>
 									</a>
 									<a href="#" class="btn btn-icon-only red   alert_conform">
@@ -153,19 +139,17 @@
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 
 
-		</div>	
+			
+		</div>
 </div>
 @endsection
 
 @section('js')
-<script src="assets/global/js/jquery.validate.min.js" type="text/javascript">
-</script>
-
+<script src="assets/global/js/jquery-confirm.min.js"type="text/javascript"></script>
 <script>
-
 jQuery(document).ready(function() {
 
 $('.alert_conform').click(function() {
@@ -188,7 +172,6 @@ $('.alert_conform').click(function() {
         }
     }
 });
-
 
 });
 

@@ -10,15 +10,15 @@
 				<ul class="page-breadcrumb grey-cascade">
 					<li>
 						<i class="fa fa-home"></i>
-						<a href="index.html">Home</a>
+						<a href="dashboard">Home</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="#">Unit</a>
+						<a href="unit_list">Unit</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="#">Unit List</a>
+						<a href="unit_list">Unit List</a>
 					</li>
 				</ul>
 				</div>
@@ -149,6 +149,7 @@
 @endsection
 
 @section('js')
+
 <script src="assets/global/js/jquery-confirm.min.js"type="text/javascript"></script>
 
 <script>
@@ -164,22 +165,22 @@ $('.alert_conform').click(function() {
         OK: function () {
             $.alert({
             	title:'Confirm',
-            	content:'Delete the Unit'
+            	content:'Delete the customer'
             });
         },
         cancel: function () {
             $.alert({
             	title:'Cancel',
-            	content:'Cancel the Unit'
+            	content:'Cancel the customer'
             });
         }
     }
 });
 
-});
-	
+
 });
 
+});
 </script>
 @endsection
 

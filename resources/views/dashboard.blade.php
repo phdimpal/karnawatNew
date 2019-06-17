@@ -4,7 +4,7 @@
 		<div class="page-content">
 			
 		</div>
-	</div>
+</div>
 @endsection
 
 @section('js')
