@@ -1,12 +1,11 @@
 @extends('layouts.master')
 
-@section('content')
+ @section('content')
 
 <div class="page-content-wrapper">
 		<div class="page-content">
-			<h3 class="page-title">Unit List </h3>
-				<div class="page-bar">
-
+			<h3 class="page-title">Transporter List </h3>
+			<div class="page-bar">
 				<ul class="page-breadcrumb grey-cascade">
 					<li>
 						<i class="fa fa-home"></i>
@@ -14,22 +13,21 @@
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="unit_list">Unit</a>
+						<a href="transporter_add">Transporter</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="unit_list">Unit List</a>
+						<a href="transporter_list">Transporter List</a>
 					</li>
 				</ul>
-				</div>
-
-				<div class="row">
+			</div>
+			<div class="row">
 				<div class="col-md-12 col-sm-12">
 					<!-- BEGIN EXAMPLE TABLE PORTLET-->
 					<div class="portlet box green util-btn-group">
 						<div class="portlet-title">
 							<div class="caption">
-								<i class="fa fa-user"></i>Unit List
+								<i class="fa fa-user"></i>Transporter List
 							</div>
 							<div class="actions">
 								<a href="#modelboxadd" class="btn btn-default btn-sm btn_add" data-toggle="modal" >
@@ -47,11 +45,8 @@
 								<th>
 									 S.No
 								</th>
-								<th>
-									 Unit Name 
-								</th>
-								<th>
-									 Unit type
+								
+								<th>Transporter
 								</th>
 								<th>
 									 Action
@@ -68,13 +63,11 @@
 									 1
 								</td>
 								<td>
-									Unit One
+									Cargo Courier
 								</td>
+								
 								<td>
-									Unit type
-								</td>
-								<td>
-									<a href="#modelboxedit" class="btn btn-icon-only green" data-toggle="modal">
+									<a href="#modelboxedid" class="btn btn-icon-only green" data-toggle="modal">
 											<i class="fa fa-edit"></i>
 									</a>
 									
@@ -94,11 +87,9 @@
 									 2
 								</td>
 								<td>
-									Unit Two
+									Cargo 2
 								</td>
-								<td>
-									Unit type second
-								</td>
+							
 								<td>
 									<a href="#" class="btn btn-icon-only green">
 											<i class="fa fa-edit"></i>
@@ -119,11 +110,9 @@
 									 3
 								</td>
 								<td>
-									Unit Third
+									Cargo Third
 								</td>
-								<td>
-									Unit type test
-								</td>
+								
 								<td>
 									<a href="#" class="btn btn-icon-only green">
 											<i class="fa fa-edit"></i>
@@ -139,19 +128,90 @@
 							</table>
 						</div>
 					</div>
+					<!-- END EXAMPLE TABLE PORTLET-->
 				</div>
 			</div>
 		</div>
 </div>
+<!-- Modal For Edit Data -->
+
+<div id="modelboxedid" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+			      <div class="modal-header" style="background-color:#26a69a;color:white;">
+			        <button type="button" class="close " data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">Update Transporter</h4>
+		          </div>
+
+        <div class="modal-body">
+
+        	<div class="row">
+                    <div class="col-md-3 col-sm-6"> </div>
+        		<div class="col-md-6 col-sm-6"> 
+			             <div class="form-group">
+						   <label for="unitname">Transporter type:</label>
+						   <input type="text" name="transport_type" class="form-control" id="transport_type" value="Transporter Name" required="">
+						 </div>
+                </div>
+				<div class="col-md-6 col-sm-6"> 		 
+					 
+			</div>	 
+	    </div>
+			      <div class="modal-footer">
+			      	<button type="button" class="btn green" data-dismiss="modal">Edit</button>
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+    </div>
+
+  </div>
+</div>
+
+<!-----------------End Model------------------->
+
+<!-- Modal -->
+<div id="modelboxadd" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+			      <div class="modal-header" style="background-color:#26a69a;color:white;">
+			        <button type="button" class="close " data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">Add Transporter</h4>
+		          </div>
+
+        <div class="modal-body">
+
+        	<div class="row">
+                    <div class="col-md-3 col-sm-6"> </div>
+				<div class="col-md-6 col-sm-6"> 		 
+						 <div class="form-group">
+						    <label for="unittype">Transporter Type:</label>
+						    <input type="text" class="form-control" name="unit_type" id="unit_type">
+						 </div>
+				</div>		 
+			</div>	 
+	    </div>
+			      <div class="modal-footer">
+			      	<button type="button" class="btn green" data-dismiss="modal">Save</button>
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+    </div>
+
+  </div>
+</div>
+
+<!-----------------End Model  Add Data------------------->
 
 @endsection
 
 @section('js')
 
+<script src="assets/global/js/jquery.validate.min.js" type="text/javascript"></script>
 <script src="assets/global/js/jquery-confirm.min.js"type="text/javascript"></script>
 
 <script>
-
 jQuery(document).ready(function() {
 
 $('.alert_conform').click(function() {
@@ -163,13 +223,13 @@ $('.alert_conform').click(function() {
         OK: function () {
             $.alert({
             	title:'Confirm',
-            	content:'Delete the customer'
+            	content:'Delete the Unit'
             });
         },
         cancel: function () {
             $.alert({
             	title:'Cancel',
-            	content:'Cancel the customer'
+            	content:'Cancel the Unit'
             });
         }
     }
@@ -201,79 +261,4 @@ $('#unit_type').validate({
 
 @endsection
 
-<div id="modelboxadd" class="modal fade" role="dialog">
-  <div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content">
-			      <div class="modal-header" style="background-color:#26a69a;color:white;">
-			        <button type="button" class="close " data-dismiss="modal">&times;</button>
-			        <h4 class="modal-title">Add Unit</h4>
-		          </div>
-
-        <div class="modal-body">
-
-        	<div class="row">
-        		<div class="col-md-6 col-sm-6"> 
-			             <div class="form-group">
-						    <label for="unitname">Unit Name:</label>
-						    <input type="text" name="unit_name" class="form-control" id="unit_name">
-						 </div>
-                </div>
-				<div class="col-md-6 col-sm-6"> 		 
-						 <div class="form-group">
-						    <label for="unittype">Unit Type:</label>
-						    <input type="text" class="form-control" name="unit_type" id="unit_type">
-						 </div>
-				</div>		 
-			</div>	 
-	    </div>
-			      <div class="modal-footer">
-			      	<button type="button" class="btn green" data-dismiss="modal">Save</button>
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-    </div>
-
-  </div>
-</div>
-
-<!-----------------End Model  Add Data------------------->
-
-
-<!-- Modal For Edit Data -->
-
-<div id="modelboxedit" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-			      <div class="modal-header" style="background-color:#26a69a;color:white;">
-			        <button type="button" class="close " data-dismiss="modal">&times;</button>
-			        <h4 class="modal-title">Edit Unit</h4>
-		          </div>
-
-        <div class="modal-body">
-
-        	<div class="row">
-        		<div class="col-md-6 col-sm-6"> 
-			             <div class="form-group">
-						   <label for="unitname">Unit Name:</label>
-						   <input type="text" name="unit_name" class="form-control" id="unit_name"value="Unit Name">
-						 </div>
-                </div>
-				<div class="col-md-6 col-sm-6"> 		 
-						 <div class="form-group">
-						    <label for="unittype">Unit Type:</label>
-						    <input type="text" class="form-control" name="unit_type" id="unit_type" value="Unit type">
-						 </div>
-				</div>		 
-			</div>	 
-	    </div>
-			      <div class="modal-footer">
-			      	<button type="button" class="btn green" data-dismiss="modal">Edit</button>
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-    </div>
-
-  </div>
-</div>

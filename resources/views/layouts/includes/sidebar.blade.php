@@ -48,18 +48,18 @@
 						</li>
 
 						<li >
-							<a href="financial_year.html">
+							<a href="financial_year">
 							<i class="icon-bar-chart"></i>
 							Financial Year</a>
 							
 						</li>
 						<li >
-							<a href="financial_month.html">
+							<a href="financial_month">
 							<i class="icon-bar-chart"></i>
 							Financial Month</a>
 						</li>
 						<li>
-							<a href="transporter_add.html">
+							<a href="transporter_add">
 							<i class="icon-bar-chart"></i>
 							Transporter</a>
 						</li>
@@ -76,16 +76,15 @@
 					</a>
 					<ul class="sub-menu">
 						<li>
-							<a href="performa_invoice_add.html">
+							<a href="performa_invoice_add">
 							<i class="fa fa-plus"></i>
 							Add</a>
 						</li>
 						<li >
-							<a href="performa_invoice_list.html">
+							<a href="performa_invoice_list">
 							<i class="fa fa-file"></i>
 							List</a>
 						</li>
-					
 					</ul>
 				</li>
 				<li>

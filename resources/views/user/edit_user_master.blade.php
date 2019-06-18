@@ -115,15 +115,6 @@
 
 <script>
 
-jQuery(document).ready(function() {   
-	Metronic.init(); // init metronic core componets
-	Layout.init(); 
-	QuickSidebar.init(); // init quick sidebar
-	Demo.init();
-	ComponentsPickers.init();
-	ComponentsDropdowns.init();
-});
-
 add_row();
 
 	$(document).on('click','#plus',function(){

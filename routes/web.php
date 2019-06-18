@@ -63,5 +63,26 @@ Route::get('/user_master', function () {return view('user.user_master');
 Route::get('/edit_user_master', function () {return view('user.edit_user_master');
 });
 
+Route::get('/financial_year', function () {return view('year_and_month.financial_year');
+});
 
+Route::get('/financial_month', function () {return view('year_and_month.financial_month');
+});
 //User Route End
+
+//transport
+Route::get('/transporter_add', function () {return view('transporter_add');
+});
+
+//performa invoice
+Route::get('/performa_invoice_add', function () {return view('performa_invoice.performa_invoice_add');
+});
+
+Route::get('/performa_invoice_list', function () {return view('performa_invoice.performa_invoice_list');
+});
+
+Route::get('/performa_invoice_view', function () {return view('performa_invoice.performa_invoice_view');
+});
+
+Route::get('/performa_invoice_edit', function () {return view('performa_invoice.performa_invoice_edit');
+});

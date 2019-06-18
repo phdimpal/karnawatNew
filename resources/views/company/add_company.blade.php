@@ -201,14 +201,13 @@
 <script src="assets/global/plugins/select2/select2.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="assets/global/plugins/jquery-multi-select/js/jquery.multi-select.js"></script>
 <!----end for select jquery-->
-<!-----------extra ------>
 
+<!-----------extra ------>
 <script src="assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
 
 <!-----------extra ------>
 <script src="assets/global/js/jquery.validate.min.js" type="text/javascript"></script>
 <script src="assets/global/js/additional-methods.min.js" type="text/javascript"></script>
-
 
 <script src="assets/admin/pages/scripts/components-pickers.js" type="text/javascript"></script>
 <script src="assets/admin/pages/scripts/components-dropdowns.js"></script>
@@ -224,7 +223,6 @@ jQuery(document).ready(function() {
 });
 
 add_row();
-
   $(document).on('click','#plus',function(){
      add_row();
   });
