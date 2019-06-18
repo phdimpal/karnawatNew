@@ -565,13 +565,9 @@ $(document).on('click','#plus_bank',function(){
             $(this).find('.rate').attr('name','company_bank['+i+'][rate]');
 
              $(this).find('.ammount').attr('name','company_bank['+i+'][ammount]');
-            
-            
           });
           
        }
- 
-     
         $(document).ready(function () {
             $("#customer_id").change(function () {
                 var value = $(this).val();
@@ -609,7 +605,6 @@ $(document).on('click','#plus_bank',function(){
 				calculation();
 			
 			});
-          
         });
 		
 		$('#getunit').change(function(){
@@ -633,7 +628,6 @@ $(document).on('click','#plus_bank',function(){
 					amount
 				 }
 				 $(this).find('.ammount').val(amount);
-					
 			});
 			
 			$('.sub_total').val(amount);
@@ -641,9 +635,7 @@ $(document).on('click','#plus_bank',function(){
 			$('.cgst_amt').val(cgst);
 			$('.sgst_amt').val(cgst);
 			$('.total_amt').val(amount+cgst*2);
-		
 		}
-
 </script>
 <!-- END JAVASCRIPTS -->
 </body>

@@ -97,17 +97,17 @@
 						</a>
 						<ul class="sub-menu">
 							<li >
-								<a href="pull_invoice.html">
+								<a href="pull_invoice">
 								<i class="fa fa-plus"></i>
 								Add</a>
 							</li>
 							<li >
-								<a href="invoice_list.html">
+								<a href="invoice_list">
 								<i class="fa fa-file"></i>
 								List</a>
 							</li>
 							<li >
-									<a href="invoice_export_list.html">
+									<a href="invoice_export_list">
 									<i class="fa fa-file"></i>
 									Export List</a>
 								</li>

@@ -244,32 +244,26 @@
 @endsection
 
 @section('js')
-
 <!----for select jquery-->
 <script type="text/javascript" src="assets/global/plugins/bootstrap-select/bootstrap-select.min.js"></script>
 <script src="assets/global/plugins/select2/select2.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="assets/global/plugins/jquery-multi-select/js/jquery.multi-select.js"></script>
 <!----end for select jquery-->
 <!-----------extra ------>
+<script src="https://cdn.ckeditor.com/4.5.1/standard/ckeditor.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.5.9/adapters/jquery.js"></script>
 
 <script src="assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
-
 <!-----------extra ------>
 <script src="assets/global/js/jquery.validate.min.js" type="text/javascript"></script>
 <script src="assets/global/js/additional-methods.min.js" type="text/javascript"></script>
-
 
 <script src="assets/admin/pages/scripts/components-pickers.js" type="text/javascript"></script>
 <script src="assets/admin/pages/scripts/components-dropdowns.js"></script>
 
 <script>
-jQuery(document).ready(function() {    
-
-	$('#customer_id').select2();
+$('#customer_id').select2();
 	$('#company_name').select2();
-	$('#getunit').select2();
-});
-
 add_row_bank();
 rename_row_bank();
 $(document).on('click','#plus_bank',function(){
@@ -309,8 +303,11 @@ $(document).on('click','#plus_bank',function(){
             $(this).find('.description').attr('name','company_bank['+i+'][description]').ckeditor({
 	toolbar: [
 		{ name: 'styles', items: [ 'Styles', 'Format', 'Font', 'FontSize' ] },
-		{ name: 'colors', items: [ 'TextColor', 'BGColor' ] },
+		{name: "colors", items: ["TextColor", "BGColor"] },
+        {name: "insert", items: ["Table"] },
 		{ name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ] },
+        { name: 'basicstyles', items: [ 'Bold', 'Italic', "Underline", "Strike", "Subscript", "Superscript", "-"]},
+        {name: "paragraph", items: ["NumberedList", "BulletedList", "-", "Outdent", "Indent", "-", "JustifyLeft", "JustifyCenter", "JustifyRight"]}
 	]
   
   });
@@ -378,7 +375,6 @@ $(document).on('click','#plus_bank',function(){
 			var quantity=0;
 			var rate=0;
 			var amount=0;
-
 			$('#main_table tbody#main_tbody_bank tr.main_tb').each(function(){ 
 				 quantity = $(this).find('.quantity').val();
 				

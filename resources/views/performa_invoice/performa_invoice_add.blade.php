@@ -156,7 +156,8 @@
 <script type="text/javascript" src="assets/global/plugins/jquery-multi-select/js/jquery.multi-select.js"></script>
 <!----end for select jquery-->
 <!-----------extra ------>
-
+<script src="https://cdn.ckeditor.com/4.5.1/standard/ckeditor.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.5.9/adapters/jquery.js"></script>
 <script src="assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
 
 <!-----------extra ------>

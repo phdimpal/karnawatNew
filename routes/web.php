@@ -86,3 +86,12 @@ Route::get('/performa_invoice_view', function () {return view('performa_invoice.
 
 Route::get('/performa_invoice_edit', function () {return view('performa_invoice.performa_invoice_edit');
 });
+
+//invoice route Start
+Route::get('/pull_invoice', function () {return view('invoice.pull_invoice');
+});
+Route::get('/invoice_list', function () {return view('invoice.invoice_list');
+});
+Route::get('/invoice_export_list', function () {return view('invoice.invoice_export_list');
+});
+
