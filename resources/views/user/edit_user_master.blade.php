@@ -262,7 +262,6 @@ $(this).find('.is_default')
          required:"Please Enter user Address",
         },
 
-
       }
 });
 
